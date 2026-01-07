@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujal Dolas | Portfolio</title>
+
+<style>
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ===== Global ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#e5e7eb;
+    line-height:1.6;
+}
+
+/* ===== Navbar ===== */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#e5e7eb;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* ===== Hero ===== */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:1.2rem;
+    color:#cbd5f5;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#0ea5e9;
+}
+
+/* ===== Sections ===== */
+section{
+    padding:80px 60px;
+    text-align:center;
+}
+
+section h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+/* ===== About ===== */
+.about p{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5f5;
+}
+
+/* ===== Skills ===== */
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:12px 22px;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+/* ===== Projects ===== */
+.projects{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.project-card{
+    background:#1e293b;
+    width:300px;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    background:#020617;
+}
+
+.project-card h3{
+    color:#38bdf8;
+}
+
+/* ===== Contact ===== */
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#020617;
+    padding:20px;
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    nav{
+        padding:15px 25px;
+    }
+    .hero h1{
+        font-size:2.2rem;
+    }
+    section{
+        padding:70px 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav>
+    <h2>Sujal Dolas</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== Hero ===== -->
+<div class="hero">
+    <h1>Hello, I'm <span>Sujal Dolas</span></h1>
+    <p>Engineering Student | Aspiring Software Engineer</p>
+    <a href="#projects" class="btn">View Projects</a>
+</div>
+
+<!-- ===== About ===== -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am an enthusiastic engineering student passionate about technology and software development.
+        I enjoy learning new concepts and building projects to improve my skills.
+    </p>
+</section>
+
+<!-- ===== Skills ===== -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Student Management System</h3>
+            <p>Basic system to manage student records using programming fundamentals.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio website to showcase skills and projects.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+        📧 <a href="mailto:sujal.dolas18460@sakec.ac.in">
+        sujal.dolas18460@sakec.ac.in</a>
+    </p>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+    <p>© 2026 Sujal Dolas | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
